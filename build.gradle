@@ -1,0 +1,16 @@
+group 'com.demo'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile 'org.mongodb:mongodb-driver:3.2.2'
+    compile 'org.mongodb:mongodb-driver-reactivestreams:1.2.0'
+}
